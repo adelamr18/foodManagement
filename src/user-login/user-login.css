@@ -1,4 +1,4 @@
-.app-title {
+.app-title-outer-container {
   text-align: center;
   margin-top: 1rem;
   position: absolute;
@@ -7,15 +7,44 @@
   justify-content: center;
   display: flex;
   margin-top: 1rem;
-  width: 414px;
-  height: 225px;
   background: 0% 0% no-repeat padding-box
       linear-gradient(180deg, #2a4052 0%, #2a405200 100%),
-    url(../assets//images/pizzaBackground.png);
+    url(../assets/images/pizzaBackground@2x.png);
   background-repeat: no-repeat;
+  position: relative;
 }
 .main-content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.login-second-subcontainer,
+.login-first-subcontainer {
+  width: 36.875rem;
+  height: 14.063rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-second-subcontainer {
+  background: 0% 0% no-repeat padding-box
+      linear-gradient(180deg, #2a4052 0%, #2a405200 100%),
+    url(../assets/images/riceBackground@2x.png);
+  margin-top: 1.5rem;
+}
+.login-form-container-outer {
+  margin-top: 1rem;
+}
+#login-form-title {
+  color: white;
+  position: absolute;
+  font-size: 1.75rem;
+  bottom: 0.625rem;
+}
+@media (max-width: 50rem) {
+  .login-second-subcontainer,
+  .login-first-subcontainer {
+    width: 25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
